@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #afb2bf;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000814;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #afb2bf;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+*:active::-webkit-scrollbar-thumb,
+*:focus::-webkit-scrollbar-thumb,
+*:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/* ===== Header CSS ===== */
+.hover-effect::after {
+  content: '';
+  position: absolute;
+  background-color: #14532d;
+  height: 1px;
+  width: 0%;
+  left: 30%;
+  bottom: 0%;
+  transition: width 0.3s;
+}
+.hover-effect:hover::after {
+  width: 42%;
+}
+
+.hover-effect-category::after {
+  content: '';
+  position: absolute;
+  background-color: #14532d;
+  height: 1px;
+  width: 0%;
+  left: 0%;
+  bottom: 0%;
+  transition: width 0.3s;
+}
+.hover-effect-category:hover::after {
+  width: 100%;
+}
