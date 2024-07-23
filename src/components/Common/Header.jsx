@@ -15,7 +15,7 @@ function Header() {
 
 	return (
 		<>
-			<header className='w-full flex lg:flex-row bg-gray-100 justify-center items-center border-b-slate-500 border-[1px] shadow-md fixed top-0'>
+			<header className='w-full h-40 flex lg:flex-row bg-gray-100 justify-center items-center border-b-slate-500 border-[1px] shadow-md z-[100] fixed top-0'>
 				<div className='w-11/12 flex lg:flex-col justify-between items-center'>
 					<div className='w-full flex lg:flex-row justify-center items-center'>
 						<div className='w-full flex lg:flex-row justify-center items-center'>
@@ -44,28 +44,28 @@ function Header() {
 							</button>
 						</div>
 						<div className='w-full hidden lg:flex h-[40px] lg:flex-row justify-center items-center'>
-							<div className='flex flex-col justify-center items-center relative hover-effect border-r-slate-400 border-r-[1px] px-6'>
+							<div className='flex flex-col justify-center items-center relative hover-effect border-r-slate-400 border-r-[1px] px-6 cursor-pointer'>
 								<IoStorefrontSharp
 									fontSize={18}
 									className='text-green-900'
 								/>
 								<p className='text-[12px]'>Store</p>
 							</div>
-							<div className='flex flex-col justify-center items-center relative hover-effect border-r-slate-400 border-r-[1px] px-6'>
+							<div className='flex flex-col justify-center items-center relative hover-effect border-r-slate-400 border-r-[1px] px-6 cursor-pointer'>
 								<FaRegUser
 									fontSize={18}
 									className='text-green-900'
 								/>
-								<p className='text-[12px]'>Sign In</p>
+								<p className='text-[12px] whitespace-nowrap'>Sign In</p>
 							</div>
-							<div className='flex flex-col justify-center items-center relative hover-effect border-r-slate-400 border-r-[1px] px-6'>
+							<div className='flex flex-col justify-center items-center relative hover-effect border-r-slate-400 border-r-[1px] px-6 cursor-pointer'>
 								<IoMdHeart
 									fontSize={18}
 									className='text-green-900'
 								/>
 								<p className=' text-[12px]'>Wishlist</p>
 							</div>
-							<div className='flex flex-col justify-center items-center relative hover-effect px-6'>
+							<div className='flex flex-col justify-center items-center relative hover-effect px-6 cursor-pointer'>
 								<BsCart2
 									fontSize={18}
 									className='text-green-900'
@@ -81,15 +81,15 @@ function Header() {
                         </div>
 					</div>
 					{/* Menu Nav */}
-					<div className='w-[80%] hidden lg:flex flex-row justify-evenly gap-4 items-center mt-4 py-4 text-green-800 font-semibold'>
-						<div className='relative hover-effect-category'>BIKES</div>
-						<div className='relative hover-effect-category'>ELECTRIC BIKES</div>
-						<div className='relative hover-effect-category'>CLOTHING & HELMETS</div>
-						<div className='relative hover-effect-category'>ACCESSORIES</div>
-						<div className='relative hover-effect-category'>COMPONENTS</div>
-						<div className='relative hover-effect-category'>MAINTENANCE</div>
-						<div className='relative hover-effect-category'>SCOOTERS & SKATE</div>
-						<div className='relative hover-effect-category'> SALE</div>
+					<div className='w-[80%] hidden lg:flex justify-evenly gap-2  items-center mt-4 py-4 text-green-800 font-semibold mx-auto'>
+						<div className='relative hover-effect-category cursor-pointer whitespace-nowrap'>BIKES</div>
+						<div className='relative hover-effect-category cursor-pointer whitespace-nowrap'>ELECTRIC BIKES</div>
+						<div className='relative hover-effect-category cursor-pointer whitespace-nowrap'>CLOTHING & HELMETS</div>
+						<div className='relative hover-effect-category cursor-pointer whitespace-nowrap'>ACCESSORIES</div>
+						<div className='relative hover-effect-category cursor-pointer whitespace-nowrap'>COMPONENTS</div>
+						<div className='relative hover-effect-category cursor-pointer whitespace-nowrap'>MAINTENANCE</div>
+						<div className='relative hover-effect-category cursor-pointer whitespace-nowrap'>SCOOTERS & SKATE</div>
+						<div className='relative hover-effect-category cursor-pointer whitespace-nowrap'> SALE</div>
 					</div>
 
 				</div>

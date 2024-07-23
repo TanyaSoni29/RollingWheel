@@ -1,0 +1,48 @@
+.custom-swiper-button-next,
+.custom-swiper-button-prev {
+  color: #000; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.custom-swiper-button-next {
+  right: 600px;
+}
+
+.custom-swiper-button-prev {
+  left: 100px;
+}
+
+.custom-swiper-button-next::after,
+.custom-swiper-button-prev::after {
+  font-size: 40px;
+}
+
+.cycle-swiper {
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .cycle-swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cycle-swiper .swiper-slide img {
+    display: block;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+  }
