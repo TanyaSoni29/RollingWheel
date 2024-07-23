@@ -15,7 +15,7 @@ function Header() {
 
 	return (
 		<>
-			<header className='w-full flex lg:flex-row bg-gray-100 justify-center items-center'>
+			<header className='w-full flex lg:flex-row bg-gray-100 justify-center items-center border-b-slate-500 border-[1px] shadow-md fixed top-0'>
 				<div className='w-11/12 flex lg:flex-col justify-between items-center'>
 					<div className='w-full flex lg:flex-row justify-center items-center'>
 						<div className='w-full flex lg:flex-row justify-center items-center'>
