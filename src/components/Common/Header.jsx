@@ -22,7 +22,6 @@ function Header() {
 							<Link to='/'>
 								<img
 									src={LogoImg}
-									
 									loading='lazy'
 									alt='Logo'
                                     className='w-52 object-cover'

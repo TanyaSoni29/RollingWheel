@@ -48,6 +48,7 @@ function HeroSection() {
                 src={banner.image}
                 alt="sale banner"
                 className="h-full w-full object-cover"
+                loading='lazy'
               />
             </div>
           </SwiperSlide>

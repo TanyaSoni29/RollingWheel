@@ -8,7 +8,7 @@ import Home from './pages/Home';
 function App() {
 	return (
 		<>
-			<div className='w-screen h-screen'>
+			<div className='w-screen min-h-screen flex flex-col'>
 				<div className='relative'>
 					<Header />
 				</div>

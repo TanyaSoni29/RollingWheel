@@ -41,17 +41,16 @@ function CycleSlider() {
           nextEl: '.custom-swiper-button-next',
           prevEl: '.custom-swiper-button-prev',
         }}
-        // pagination={{ clickable: true }}
-        // autoplay={{ delay: 3000 }}
         className="w-full cycle-swiper"
       >
         {saleBanner.map((banner) => (
           <SwiperSlide key={banner.id} className='p-40'>
-            <div className="w-full h-full">
+            <div className="w-full h-full ">
               <img
                 src={banner.image}
-                alt="sale banner"
+                alt="demo Cycle"
                 className="h-[90%] w-[90%] object-contain"
+                loading='lazy'
               />
             </div>
           </SwiperSlide>
