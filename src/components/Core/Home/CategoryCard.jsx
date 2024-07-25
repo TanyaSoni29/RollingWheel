@@ -14,7 +14,7 @@ function CategoryCard({ image, title }) {
                 <div className='w-[500px] h-[500px]'>
                     <img
                         src={image}
-                        className='w-full h-full object-cover scale-100 duration-700 transition-all group-hover:scale-105'
+                        className='w-full h-full object-cover duration-700 transition-all group-hover:scale-105'
                     />
                 </div>
                 <button className='w-[60%] uppercase px-4 py-3 border-cyan-800 border-[1px] group-hover:border-cyan-950 cursor-pointer group-hover:border-t-2 group-hover:border-b-2 group-hover:-translate-y-2 transition-all duration-300'>
