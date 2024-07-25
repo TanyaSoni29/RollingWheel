@@ -20,7 +20,7 @@ function CategoryCard({ image, title }) {
                 <button className='w-[60%] uppercase px-4 py-3 border-cyan-800 border-[1px] group-hover:border-cyan-950 cursor-pointer group-hover:border-t-2 group-hover:border-b-2 group-hover:-translate-y-2 transition-all duration-300'>
                     Shop Now
                 </button>
-                <div className='absolute z-[80] text-center left-6 bottom-20'>
+                <div className='absolute z-[80] text-center left-6 bottom-10'>
                     <p className='text-white font-semibold text-6xl uppercase'>{title}</p>
                 </div>
             </div>
