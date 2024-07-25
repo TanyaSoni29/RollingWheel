@@ -10,8 +10,8 @@ function CategoryCard({ image, title }) {
 
     return (
         <div className={`w-11/12 h-full flex flex-col justify-center items-center ${inView ? 'card-visible' : 'card-hidden'}`} ref={ref}>
-            <div className='relative z-[90] flex flex-col justify-center items-center gap-6 cursor-pointer group transition-transform duration-1000'>
-                <div className='w-[500px] h-[500px]'>
+            <div className='relative z-[90] flex flex-col justify-center items-center gap-5 cursor-pointer group transition-transform duration-1000'>
+                <div className='w-[500px] h-[500px] overflow-hidden'>
                     <img
                         src={image}
                         className='w-full h-full object-cover duration-700 transition-all group-hover:scale-105'

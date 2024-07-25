@@ -11,11 +11,11 @@
 }
 
 .custom-swiper-button-next {
-  right: 600px;
+  right: 100px;
 }
 
 .custom-swiper-button-prev {
-  left: 100px;
+  left: 50px;
 }
 
 .custom-swiper-button-next::after,
@@ -42,7 +42,23 @@
   
   .cycle-swiper .swiper-slide img {
     display: block;
-    width: 60%;
-    height: 60%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
   }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-up {
+    animation: slideUp 1s ease-in-out forwards;
+  }
+  
