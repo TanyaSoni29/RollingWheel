@@ -24,7 +24,7 @@ function ShortAdsSection() {
 				<div className='w-[50%] flex flex-col justify-center items-center text-white gap-6'>
 					<h2
 						ref={headingRef}
-						className={`'w-full font-bold text-2xl transition-transform duration-2000 delay-500' ${
+						className={`'w-full font-bold text-2xl transition-transform duration-2000 delay-500 ease-in-out' ${
 							headingIsVisible
 								? 'translate-x-0 opacity-100'
 								: 'translate-x-full opacity-0'
