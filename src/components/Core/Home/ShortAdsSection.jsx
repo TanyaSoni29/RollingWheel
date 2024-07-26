@@ -8,11 +8,12 @@ import './ShortAdsSection.css';
 
 function ShortAdsSection() {
 	const { ref: headingRef, inView: headingIsVisible } = useInView();
-	const { ref: shortDescriptionRef, inView: shortDescriptionIsVisible } =	useInView( { rootMargin: "-200px" });
+	const { ref: shortDescriptionRef, inView: shortDescriptionIsVisible } =
+		useInView({ rootMargin: '-200px' });
 	const { ref: buttonRef, inView: buttonIsVisible } = useInView();
 
 	return (
-		<div className='mt-8 w-full h-80 relative z-[90] mb-8'>
+		<div className='mt-8 w-full h-[25rem] lg:h-[22rem] relative z-[90] mb-8'>
 			<img
 				src={ShortAdsImage}
 				alt='Short Description of Shop'
@@ -20,11 +21,11 @@ function ShortAdsSection() {
 				loading='lazy'
 			/>
 			<div className='w-full h-full absolute right-0 top-0 z-[88] bg-black opacity-[0.35]'></div>
-			<div className='w-[40%] h-full flex flex-col gap-6 justify-center items-center text-center absolute top-0 right-0 z-[89] bg-[#005a53cc]'>
-				<div className='w-[50%] flex flex-col justify-center items-center text-white gap-6'>
+			<div className='w-[40%] h-full flex flex-col gap-4 lg:gap-4 xl-gap-6 justify-center items-center text-center absolute top-0 right-0 z-[89] bg-[#005a53cc]'>
+				<div className='w-[70%] lg:w-[50%] flex flex-col justify-center items-center text-white gap-4 md:gap-6'>
 					<h2
 						ref={headingRef}
-						className={`'w-full font-bold text-2xl transition-transform duration-2000 delay-500 ease-in-out' ${
+						className={`'w-full font-bold text-xl md:text-2xl transition-transform duration-2000 delay-500 ease-in-out' ${
 							headingIsVisible
 								? 'translate-x-0 opacity-100'
 								: 'translate-x-full opacity-0'
