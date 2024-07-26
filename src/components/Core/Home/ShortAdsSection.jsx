@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import ShortAdsImage from '../../../assets/Images/electric-bike.jpg';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
