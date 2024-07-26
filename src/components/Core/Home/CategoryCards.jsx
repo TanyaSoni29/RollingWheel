@@ -43,8 +43,8 @@ function CategoryCards() {
 		},
 	];
 	return (
-		<div className='mt-8 mb-8 w-full h-full flex justify-center items-center gap-6'>
-			<div className='grid grid-cols-3 gap-4 place-content-center'>
+		<div className='mt-8 mb-8 w-full h-full flex justify-center items-center gap-6 mx-auto'>
+			<div className='grid sm:grid-cols-2 sm:gap-4 xl:grid-cols-3 grid-col-1 gap-y-6 place-content-center'>
 				{CategoryCardData.map((card) => (
 					<CategoryCard
 						key={card.id}
