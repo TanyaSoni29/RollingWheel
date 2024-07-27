@@ -43,7 +43,7 @@ function HeroSection() {
       >
         {saleBanner.map((banner) => (
           <SwiperSlide key={banner.id}>
-            <div className="w-full h-[400px] md:h-[600px]">
+            <div className="w-full h-[178px] sm:h-[280px] md:h-[300px] lg:h-[400px] xl:h-[500px] 2xl:h-[600px]">
               <img
                 src={banner.image}
                 alt="sale banner"
