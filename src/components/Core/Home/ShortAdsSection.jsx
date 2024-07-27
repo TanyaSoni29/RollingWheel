@@ -20,8 +20,8 @@ function ShortAdsSection() {
 				className='w-full h-full object-cover'
 				loading='lazy'
 			/>
-			<div className='w-full h-full absolute right-0 top-0 z-[88] bg-black opacity-[0.35]'></div>
-			<div className='w-[40%] h-full flex flex-col gap-4 lg:gap-4 xl-gap-6 justify-center items-center text-center absolute top-0 right-0 z-[89] bg-[#005a53cc]'>
+			<div className='w-full h-full absolute right-0 top-0 z-[88] bg-black opacity-0 sm:opacity-[0.35]'></div>
+			<div className='w-full sm:w-[40%] h-full flex flex-col gap-4 lg:gap-4 xl-gap-6 justify-center items-center text-center absolute top-0 right-0 z-[89] bg-[#005a53cc]'>
 				<div className='w-[70%] lg:w-[50%] flex flex-col justify-center items-center text-white gap-4 md:gap-6'>
 					<h2
 						ref={headingRef}
@@ -35,7 +35,7 @@ function ShortAdsSection() {
 					</h2>
 					<p
 						ref={shortDescriptionRef}
-						className={`w-full font-semibold text-[1rem]  transition-opacity duration-2000 delay-1500 ${
+						className={`w-full font-semibold text-[1rem] transition-opacity duration-2000 delay-1500 ${
 							shortDescriptionIsVisible ? 'opacity-100' : 'opacity-0'
 						}`}
 					>
@@ -48,7 +48,7 @@ function ShortAdsSection() {
 					>
 						<button
 							ref={buttonRef}
-							className={`w-full uppercase bg-white text-green-700 px-3 whitespace-nowrap rounded-sm border-green-900 border-[1px] p-3 transition-transform duration-2000 delay-1500 ${
+							className={`w-full uppercase bg-white text-green-700 px-3 whitespace-nowrap rounded-sm border-green-900 border-[1px] p-2 sm:p-3 transition-transform duration-2000 delay-1500 ${
 								buttonIsVisible ? 'translate-y-0' : 'translate-y-4'
 							}`}
 						>
