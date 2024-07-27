@@ -41,12 +41,12 @@ function BrandListSection() {
 		},
 	];
 	return (
-		<div className='w-full h-32 flex justify-center items-center mt-6'>
-			<div className='w-full h-[25%] flex justify-center items-center gap-10'>
+		<div className='w-full h-48 sm:h-32 flex justify-center items-center mt-2 mb-4 sm:mt-6'>
+			<div className='w-full h-[25%] flex justify-center items-start sm:items-center gap-4 flex-wrap sm:gap-6 lg:gap-10'>
 				{BrandList.map(({ id, image }) => (
 					<div
 						key={id}
-						className='h-full px-4'
+						className='h-[60%] sm:h-[75%] lg:h-full px-2 lg:px-4'
 					>
 						<img
 							src={image}
